@@ -3,11 +3,10 @@ import pyautogui
 import numpy as np
 from datetime import datetime
 
-framerate=8.0
+framerate=12.0
 fourcc = cv2.VideoWriter_fourcc(*'XVID')
-file_name=datetime.now().strftime("%d-%m-%Y_%I-%M-%S_%p")
-filename=str(file_name)+".avi"
-screen_size=(3840, 2160)
+filename=str(datetime.now().strftime("%d-%m-%Y_%I-%M-%S_%p"))+".avi"
+screen_size=(1920, 1080)
 
 out=cv2.VideoWriter(filename,fourcc,framerate,(screen_size))
 
