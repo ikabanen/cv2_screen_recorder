@@ -23,8 +23,6 @@ while True:
     points=list(zip(Xthis, Ythis))
     points=np.array(points, 'int32')
     cv2.fillPoly(frame, [points], color=[1, 190, 200])
-
     out.write(frame)
 
-cv2.destroyAllWindows()
 out.release()
