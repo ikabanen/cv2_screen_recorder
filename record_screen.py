@@ -25,8 +25,6 @@ while True:
     cv2.fillPoly(frame, [points], color=[1, 190, 200])
 
     out.write(frame)
-    if cv2.waitKey(1) == 27:
-        break
 
 cv2.destroyAllWindows()
 out.release()
